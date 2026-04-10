@@ -56,5 +56,32 @@ This is a natural fit for:
 - constrained parameter updates for ML systems
 - simple online optimization experiments
 
+## Game-domain examples
+### 1. Strategy-mixture tuning on a simplex
+Use the simplex set when strategy weights should remain nonnegative and sum to 1.
+
+Run:
+```bash
+cargo run --example game_simplex
+```
+
+This is a natural fit for:
+- mixed-strategy prototypes
+- agent policy weighting
+- balancing probability distributions over actions
+
+### 2. Bounded economy/control tuning
+Use the box set when gameplay controls must remain inside safe bounds.
+
+Run:
+```bash
+cargo run --example game_box
+```
+
+This is a natural fit for:
+- reward multiplier tuning
+- spawn/loot/balance parameters
+- bounded economy or difficulty-control updates
+
 ## Lean companion
 The Lean side is designed to mirror the algorithmic structure and core mathematical properties of the library closely, so the project has both a reusable Rust implementation and a theorem-oriented specification layer.
