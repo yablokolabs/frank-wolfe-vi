@@ -56,6 +56,5 @@ This is a natural fit for:
 - constrained parameter updates for ML systems
 - simple online optimization experiments
 
-## Honest scope
-This is not a full formal verification of floating-point Rust behavior.
-The Lean side is intended to mirror the algorithmic structure and core mathematical properties closely.
+## Lean companion
+The Lean side is designed to mirror the algorithmic structure and core mathematical properties of the library closely, so the project has both a reusable Rust implementation and a theorem-oriented specification layer.
