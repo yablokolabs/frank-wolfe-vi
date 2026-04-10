@@ -83,5 +83,33 @@ This is a natural fit for:
 - spawn/loot/balance parameters
 - bounded economy or difficulty-control updates
 
+## Fintech examples
+### 1. Portfolio allocation on a simplex
+Use the simplex set when weights must remain nonnegative and sum to 1.
+
+Run:
+```bash
+cargo run --example fintech_simplex
+```
+
+This is a natural fit for:
+- portfolio weighting
+- capital allocation
+- risk-budget distribution across strategies
+
+### 2. Bounded execution/risk control tuning
+Use the box set when parameters must remain within safe operational limits.
+
+Run:
+```bash
+cargo run --example fintech_box
+```
+
+This is a natural fit for:
+- spread tuning
+- inventory penalty tuning
+- bounded execution aggressiveness
+- constrained trading/control parameters
+
 ## Lean companion
 The Lean side is designed to mirror the algorithmic structure and core mathematical properties of the library closely, so the project has both a reusable Rust implementation and a theorem-oriented specification layer.
