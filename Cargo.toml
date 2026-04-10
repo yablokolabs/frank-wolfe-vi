@@ -1,0 +1,17 @@
+[package]
+name = "frank-wolfe-vi"
+version = "0.1.0"
+edition = "2024"
+description = "Generic Rust library for Frank-Wolfe methods on monotone variational inequalities"
+license = "MIT"
+repository = "https://github.com/yablokolabs/frank-wolfe-vi"
+readme = "README.md"
+keywords = ["optimization", "frank-wolfe", "variational-inequality", "math", "algorithms"]
+categories = ["algorithms", "science"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+
+[dev-dependencies]
+approx = "0.5"
